@@ -1,1 +1,0 @@
-# Cikliniai_algoritmai2
