@@ -4,16 +4,17 @@
 
 let sum = 0;
 let entered = 0;
-let x;
+let x = +prompt("Iveskite kiek balu gavo mokinys");
 
-while (x !=0) {
-    x = +prompt("Iveskite kiek balu gavo mokinys");
-    if (x >= 5){
+while (x > 0 && x <= 10) {
+
+    if (x >= 5) {
         entered++;
     }
-    else if (x == 0) break;
+    
     sum++;
-} 
+    x = +prompt("Iveskite kiek balu gavo mokinys");
+}
 
 document.getElementById("content").innerHTML = `I karnavala ejo ${sum} mokiniai, pateko ${entered} `;
 
